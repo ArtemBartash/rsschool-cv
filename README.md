@@ -1,1 +1,1 @@
- https://artembartash.github.io/rsschool-cv/
+https://artembartash.github.io/rsschool-cv/cv
