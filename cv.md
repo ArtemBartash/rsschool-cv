@@ -16,7 +16,7 @@
 * Git/GitHub
 # Code Examples
 An anagram is the result of rearranging the letters of a word to produce a new word.
-javascript 
+```javascript 
     var isAnagram = function(test, original) {
   if(test.toLowerCase().split('').sort().join('') === original.toLowerCase().split('').sort().join(''))
     {
@@ -24,3 +24,4 @@ javascript
     }
   return false;
 };
+```
