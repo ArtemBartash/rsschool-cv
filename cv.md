@@ -25,3 +25,6 @@ An anagram is the result of rearranging the letters of a word to produce a new w
   return false;
 };
 ```
+# Education
+* BSU (Faculty of Radiophysics and Computer technologies)
+* TeachMeSkills (Front-End Developer)
