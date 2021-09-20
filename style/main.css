@@ -393,3 +393,700 @@ a {
   }
 
   /*------------------------------------------highlight end-------------------------------------*/
+/*------------------------------------Media start-------------------*/
+
+  @media (max-width: 768px) {
+    .header__list a {
+        font-size:18px;
+    }
+
+    .header__title {
+       font-size: 28px;
+    }
+
+    .main__image img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .main__name h2 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .main__name h4 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .summary h2 {
+        font-size: 28px;
+    }
+
+    .strengths {
+        width: 350px;
+    }
+    
+    .strengths__item {
+        font-size: 18px;
+    }
+
+    .main__text {
+        width: 400px;
+        font-size: 18px;
+    }
+
+    .contact {
+        font-size: 18px;
+    }
+
+    .contact__item {
+        margin-bottom: 12px;
+    }
+
+    .main__skills h2 {
+        font-size: 28px;
+    }
+    
+    .skills img {
+        width: 40px;
+        height: auto;
+    }
+
+    .skills__text {
+        font-size: 18px;
+    }
+
+    .main__code {
+        margin-top: 35px;
+    }
+    
+    .main__code h2 {
+        margin-bottom: 20px;
+        font-size: 28px;
+        margin-left: 40px;
+    }
+
+    .main__education {
+        margin-left: 40px;
+    }
+    
+    .main__education h2 {
+        font-size: 28px;
+    }
+    
+    .education__list {
+        font-size: 18px;
+    }
+
+    .main__project h2 {
+        font-size: 28px;
+        margin-left: 40px;
+    }
+    
+    .project__img {
+        width: 100px;
+        height: 100px;
+        margin-left: 40px;
+    }
+    
+    .project__text {
+        width: 80%;
+        font-size: 18px;
+    }
+    
+    .main__language {
+        margin-left: 40px;
+    }
+    
+    .main__language h2 {
+        font-size: 28px;
+    }
+    
+    .languages__list {
+        font-size: 18px;
+    }
+  }
+
+  
+@media (max-width: 767px) {
+    .header__top {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        position: fixed;
+        width: 100%;
+    }
+
+    .header__bottom {
+        padding-top: 70px;
+    }
+
+	.menu__icon {
+		z-index: 5;
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+	}
+	.menu__icon span,
+	.menu__icon::before,
+	.menu__icon::after {
+		left: 0;
+		position: absolute;
+		height: 10%;
+		width: 100%;
+		transition: all 0.3s ease 0s;
+		background-color: #000;
+	}
+	.menu__icon::before,
+	.menu__icon::after {
+		content: "";
+	}
+	.menu__icon::before {
+		top: 0;
+	}
+	.menu__icon::after {
+		bottom: 0;
+	}
+	.menu__icon span {
+		top: 50%;
+		transform: scale(1) translate(0px, -50%);
+	}
+
+	.menu__icon._active span {
+		transform: scale(0) translate(0px, -50%);
+	}
+	.menu__icon._active::before {
+		top: 50%;
+		transform: rotate(-45deg) translate(0px, -50%);
+	}
+	.menu__icon._active::after {
+		bottom: 50%;
+		transform: rotate(45deg) translate(0px, 50%);
+	}
+
+	.header__nav {
+		position: fixed;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(93,110,133, 0.9);
+		padding: 100px 30px 30px 30px;
+		transition: left 0.3s ease 0s;
+		overflow: auto;
+	}
+	.header__nav._active {
+		left: 0;
+	}
+
+	.header__nav::before {
+		content: "";
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		height: auto;
+		background-color: #C0CEE2;
+		z-index: 2;
+	}
+
+	.menu__list > li {
+		flex-wrap: wrap;
+		margin: 0px 0px 30px 0px;
+	}
+	.menu__list > li:last-child {
+		margin-bottom: 0;
+	}
+	.menu__list > li._active .menu__sub-list {
+		display: block;
+	}
+	.menu__link {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 660px) {
+
+    .header__title {
+       font-size: 24px;
+    }
+
+    .main__image img {
+        width: 190px;
+        height: 190px;
+    }
+    
+    .main__name h2 {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+    
+    .main__name h4 {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .summary h2 {
+        font-size: 24px;
+    }
+
+    .strengths {
+        width: 300px;
+    }
+    
+    .strengths__item {
+        font-size: 17px;
+    }
+
+    .main__text {
+        width: 300px;
+        font-size: 17px;
+    }
+
+    .contact {
+        font-size: 17px;
+    }
+
+    .contact__item {
+        margin-bottom: 12px;
+    }
+
+    .main__skills h2 {
+        font-size: 24px;
+    }
+    
+    .skills img {
+        width: 35px;
+        height: auto;
+    }
+
+    .skills__text {
+        font-size: 17px;
+    }
+    
+    .main__code h2 {
+        font-size: 24px;
+    }
+
+    .main__education {
+        margin-left: 40px;
+    }
+    
+    .main__education h2 {
+        font-size: 24px;
+    }
+    
+    .education__list {
+        font-size: 17px;
+    }
+
+    .main__project h2 {
+        font-size: 24px;
+        margin-left: 40px;
+    }
+    
+    .project__text {
+        width: 80%;
+        font-size: 17px;
+    }
+    
+    .main__language h2 {
+        font-size: 24px;
+    }
+    
+    .languages__list {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 560px) {
+ 
+     .main__image img {
+         width: 170px;
+         height: 170px;
+     }
+     
+     .main__name h2 {
+         font-size: 25px;
+         margin-bottom: 10px;
+     }
+     
+     .main__name h4 {
+         font-size: 20px;
+         font-weight: 600;
+     }
+ 
+     .summary h2 {
+         font-size: 24px;
+     }
+
+     .strengths {
+        width: 250px;
+    }
+    
+    .strengths__item {
+        font-size: 16px;
+    }
+ 
+     .main__text {
+         width: 200px;
+         font-size: 16px;
+     }
+ 
+     .contact {
+        font-size: 16px;
+     }
+
+ 
+     .contact__item {
+        margin-bottom: 20px;
+     }
+ 
+     .main__skills h2 {
+         font-size: 24px;
+     }
+     
+     .skills img {
+         width: 30px;
+         height: auto;
+     }
+ 
+     .skills__text {
+         font-size: 16px;
+     }
+     
+     .main__code h2 {
+         font-size: 24px;
+     }
+ 
+     .main__education {
+         margin-left: 40px;
+     }
+     
+     .main__education h2 {
+         font-size: 24px;
+     }
+     
+     .education__list {
+         font-size: 16px;
+     }
+
+     .main__project h2 {
+        font-size: 24px;
+        margin-left: 40px;
+    }
+    
+    .project__text {
+        width: 80%;
+        font-size: 16px;
+    }
+     
+     .main__language h2 {
+         font-size: 24px;
+     }
+     
+     .languages__list {
+         font-size: 16px;
+     }
+}
+
+@media (max-width: 460px) {
+    .main__image img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .main__name h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .main__name h4 {
+        font-size: 17px;
+        font-weight: 600;
+    }
+
+    .strengths {
+        width: 200px;
+    }
+    
+    .strengths__item {
+        font-size: 16px;
+    }
+
+    
+
+    .menu__link {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 425px) {
+    .header__list {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .header__item {
+        margin-bottom: 20px;
+    }
+
+    .main__image {
+        margin-left: 50px;
+    }
+
+    .summary h2 {
+        margin-left: 15px;
+        font-size: 20px;
+    }
+
+    .main__summary {
+        flex-wrap: wrap;
+    }
+
+    .strengths {
+        width: 200px;
+        margin-left: 15px;
+    }
+    
+    .strengths__item {
+        font-size: 15px;
+    }
+
+    .main__text {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+
+    .contact {
+       font-size: 16px;
+       width:100%;
+       margin-left: 20px;
+    }
+
+    .contact__list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .contact__item {
+       margin-bottom: 10px;
+    }
+
+    .main__skills h2 {
+        font-size: 24px;
+    }
+    
+    .skills img {
+        width: 30px;
+        height: auto;
+    }
+
+    .skills__text {
+        font-size: 16px;
+    }
+    
+    .main__code h2 {
+        font-size: 24px;
+    }
+
+    .main__education {
+        margin-left: 40px;
+    }
+    
+    .main__education h2 {
+        font-size: 24px;
+    }
+    
+    .education__list {
+        font-size: 16px;
+    }
+
+    .main__project h2 {
+        font-size: 24px;
+        margin-left: 40px;
+        margin-top: 15px;
+    }
+    
+    .project__text {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .project__img {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .main__language h2 {
+        font-size: 24px;
+    }
+    
+    .languages__list {
+        font-size: 16px;
+    }
+
+    .menu__link {
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 390px) {
+    .main__image img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .main__name h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .main__name h4 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .main__text {
+        width: 85%;
+    }
+
+    .summary h2 {
+        margin-left: 24px;
+        font-size: 20px;
+    }
+
+    .main__skills h2 {
+        font-size: 20px;
+    }
+    
+    .skills img {
+        width: 25px;
+        height: auto;
+    }
+
+    .skills__text {
+        font-size: 14px;
+    }
+
+    .main__code h2 {
+        font-size: 20px;
+        margin-left: 28px;
+    }
+
+    .main__education {
+        margin-left: 28px;
+    }
+    
+    .main__education h2 {
+        font-size: 20px;
+    }
+    
+    .education__list {
+        font-size: 15px;
+    }
+
+    .main__project {
+        margin-top: 15px;
+        background-color: #C0CEE2;
+    }
+
+    .main__project h2 {
+        font-size: 20px;
+    }
+    
+    .project__img {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .text__container h3 {
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    
+    .project__text {
+        width: 80%;
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+    
+    .main__language h2 {
+        font-size: 20px;
+    }
+    
+    .languages__list {
+        font-size: 15px;
+    }
+
+    .main__language {
+        margin-left: 28px;
+    }
+}
+
+@media(max-width: 350px) {
+    .main__image {
+        margin: 10px;
+    }
+}
+
+@media(max-width: 320px) {
+    .header__item {
+        margin-bottom: 30px;
+    }
+    .skills img {
+        width: 22px;
+        height: auto;
+    }
+
+    .skills__text {
+        font-size: 12px;
+    }
+
+    .contact {
+        margin-left: 25px;
+     }
+
+    .contact__list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; 
+    }
+
+    .contact__item {
+       margin-bottom: 10px;
+    }
+
+    .main__project {
+        margin-top: 15px;
+        background-color: #C0CEE2;
+    }
+
+    .main__project h2 {
+        font-size: 20px;
+    }
+    
+    .project__img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .text__container h3 {
+        margin-bottom: 5px;
+        font-size: 16px;
+    }
+    
+    .project__text {
+        width: 80%;
+        font-size: 13px;
+        margin-bottom: 10px;
+    }
+}
+
+  /*------------------------------------Media end-------------------*/
